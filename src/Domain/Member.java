@@ -2,12 +2,12 @@ package Domain;
 
 public class Member extends User {
     private String userName;
-    private String email;  // todo change diagram accordingly
+    private String name;
     private String password;
 
-    public Member(String userName, String email, String password) {
+    public Member(String userName, String name, String password) {
         this.userName = userName;
-        this.email = email;
+        this.name = name;
         this.password = password;
     }
     public void logOut () {}
