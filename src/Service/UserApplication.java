@@ -1,3 +1,4 @@
+/*
 package Service;
 
 import DataAccess.UserDao;
@@ -12,3 +13,4 @@ public class UserApplication {
         uc.insertUser(iName, iEmail);
     }
 }
+*/
