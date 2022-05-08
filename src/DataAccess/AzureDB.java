@@ -19,15 +19,10 @@ public class AzureDB {
 
     public AzureDB(){
 
-        String user = "tzevethazak";
+        String user = "";
         String password = "123456T!";
-        cnnString = "jdbc:sqlserver://tzevethazak.database.windows.net;"
-                + "database=tzevethazak;"
-                + "user=" + user + ";"
-                + "password=" + password + ";"
-                + "encrypt=true;"
-                + "trustServerCertificate=false;"
-                + "loginTimeout=30;";
+        cnnString ="jdbc:sqlserver://tzevethazak.database.windows.net:1433;database=DB_HW3_Implementation;user=tzevethazak@tzevethazak;password=123456T!;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+
     }
 
 
