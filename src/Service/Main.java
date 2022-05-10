@@ -9,7 +9,7 @@ public class Main {
     LoginProcedure proc = new LoginProcedure();
     proc.RequestLogin("Naor","123456");
     RefereeRegister referee = new RefereeRegister();
-    referee.RegisterReferee("tzadok","tzadok@walla",1);
+    referee.RegisterReferee("tzadok","tzadok@walla","1");
     }
 
 }
