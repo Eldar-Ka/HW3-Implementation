@@ -4,6 +4,8 @@ import DataAccess.AzureDB;
 import DataAccess.GamesDB;
 import DataAccess.UserDB;
 
+import java.util.ArrayList;
+
 public class RepresentativeController {
     public RepresentativeController() {
     }
