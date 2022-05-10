@@ -3,6 +3,7 @@ package Domain;
 import java.util.ArrayList;
 
 public class Game {
+    public String Gameid;
     public String Date;
     public String Time;
     public Team hostTeam;
