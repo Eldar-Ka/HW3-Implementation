@@ -1,0 +1,26 @@
+this script for create the data base 
+
+create table GameEvents (game_id int,date TIMESTAMP,minute VARCHAR(255),description VARCHAR(255),
+    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+
+
+CREATE TABLE Users(user_id int IDENTITY(1,1), username VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL,password VARCHAR(255) NOT NULL PRIMARY KEY (username,email))
+
+INSERT INTO Users(username, email ,password)
+VALUES (naor, naor@post.bgu , 123456);
+
+CREATE TABLE Referee(user_id int IDENTITY(1,1), username VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL,PRIMARY KEY (username,email))
+
+CREATE TABLE Representative(user_id int IDENTITY(1,1), username VARCHAR(255) NOT NULL,email VARCHAR(255) NOT NULL, PRIMARY KEY (username,email))
+
+
+Create table Games (game_id int IDENTITY(1,1),league VARCHAR(255), localteam VARCHAR(255),vistoreteam VARCHAR(255),judge VARCHAR(255), date DATETIME,
+ field VARCHAR(255),mainJudge VARCHAR(255), secondaryjudge VARCHAR(255),localteam_score VARCHAR(255),visitoreteam_score VARCHAR(255),
+eventLog VARCHAR(255),PRIMARY KEY(localteam,vistoreteam,date )
+
+
+
+
+
+// NOT EXIST YET
+CREATE TABLE Admins(user_id int ,username VARCHAR(255))
