@@ -8,8 +8,9 @@ public class RepresentativeController {
     public RepresentativeController() {
     }
 
-    public void RegesterReferee(String userName, String email, String password, String training) {
+    public void RegisterReferee(String userName, String email, Game game) {
         AzureDB db = UserDB.getInstance();
+
         // todo register an referee
     }
 

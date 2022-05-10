@@ -1,11 +1,15 @@
 package Service;
 
-import Domain.Guest;
+import Domain.GuestController;
 
 public class LoginProcedure {
-//    UserController controller = new UserController();
-    public void RequestLogin(Guest guest, String username, String password) {
-//        controller.RequestLogin(username, password);
-        guest.login(username, password);
+    GuestController controller = new GuestController();
+    public void RequestLogin(String username, String password) {
+        controller.RequestLogin(username, password);
     }
+
+
+
 }
+
+
