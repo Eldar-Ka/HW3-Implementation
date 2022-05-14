@@ -1,8 +1,7 @@
 <component name="libraryTable">
   <library name="mssql-jdbc-10.2.0.jre8">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../../Java Sadna Lib/mssql-jdbc-10.2.0.jre11.jar!/" />
-      <root url="jar://$PROJECT_DIR$/../../../../Java Sadna Lib/mssql-jdbc-10.2.0.jre17.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/mssql-jdbc-10.2.0.jre8.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
