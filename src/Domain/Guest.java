@@ -13,9 +13,6 @@ public class Guest extends User{
         Search the DB for username, if exists - check password.
         If any is not true - return username/password incorrect. 
          */
-
-        AzureDB db = UserDB.getInstance();
-        // todo login
     }
 
     public void signUp(){

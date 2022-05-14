@@ -3,6 +3,7 @@ package Domain;
 import java.util.ArrayList;
 
 public class Team {
+    String Name;
     private boolean active=true;
     private PersonalPage personalPage;
     private TeamManager teamManager;
@@ -12,7 +13,8 @@ public class Team {
     private ArrayList<TeamOwner> owners;
     private ArrayList<Coach> coaches;
 
-    public Team(boolean active, PersonalPage personalPage, TeamManager teamManager, League league) {
+    public Team(String Name,boolean active, PersonalPage personalPage, TeamManager teamManager, League league) {
+        this.Name = Name;
         this.active = active;
         this.personalPage = personalPage;
         this.teamManager = teamManager;

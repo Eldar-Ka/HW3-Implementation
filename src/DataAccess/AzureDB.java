@@ -59,7 +59,7 @@ public class AzureDB {
     /**
      * @param sql query to modify table in DB
      */
-    public void ExecuteAzureSQL(String sql){
+    public boolean ExecuteAzureSQL(String sql){
         try(Connection cnn = DriverManager.getConnection(cnnString);
             PreparedStatement statement = cnn.prepareStatement(sql,Statement.RETURN_GENERATED_KEYS);) {
             ResultSet resultSet = null;
@@ -68,9 +68,11 @@ public class AzureDB {
             while (resultSet.next()) {
                 System.out.println("Keys" + resultSet.getString(1));
             }
+            return true;
         }
         catch (SQLException e){
             e.printStackTrace();
+            return false;
         }
     }
 

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Game {
     public String Gameid;
     public String Date;
-    public String Time;
     public Team hostTeam;
     public Team guestTeam;
     public String field;
@@ -14,9 +13,7 @@ public class Game {
     private League league;
     private ArrayList<Referee> referees;
 
-    public Game(String date, String time, Team hostTeam, Team guestTeam, String field, String score, EventLog eventLog, League league) {
-        Date = date;
-        Time = time;
+    public Game(Team hostTeam, Team guestTeam, String field, String score, EventLog eventLog, League league) {
         this.hostTeam = hostTeam;
         this.guestTeam = guestTeam;
         this.field = field;
@@ -24,5 +21,9 @@ public class Game {
         this.eventLog = eventLog;
         this.league = league;
         this.referees = new ArrayList<Referee>();
+    }
+
+    public void setDate(String date){
+        this.Date = date;
     }
 }
