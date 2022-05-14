@@ -25,7 +25,7 @@ public class RepresentativeController {
         }
 
         System.out.println("Chek if game exist : ");
-        sql = "Select vistoreteam ,localteam  from Users where game_id="+"'"+game_id+"'";
+        sql = "Select vistoreteam ,localteam  from Games where game_id="+"'"+game_id+"'";
         ArrayList<ArrayList<String>> existGame = myDB.SelectAzureSQL(sql);
 
         if( existGame.isEmpty()){

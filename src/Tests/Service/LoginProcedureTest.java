@@ -1,8 +1,9 @@
 package Service;
 
-import org.junit.Test;
-
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class LoginProcedureTest {
