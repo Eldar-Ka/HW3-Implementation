@@ -23,6 +23,7 @@ public class ScheduleGamesTest {
     }
 
     @Test
+    @DisplayName("this test should not schedule a Games because its not found it the DB")
     public void scheduleGamesNotFound() {
         League league=new League();
         EventLog eventLong=new EventLog();
@@ -33,6 +34,7 @@ public class ScheduleGamesTest {
         assertFalse(flag);
     }
     @Test
+    @DisplayName("this test should schedule a Games")
     public void scheduleGames() {
         League league=new League();
         EventLog eventLong=new EventLog();

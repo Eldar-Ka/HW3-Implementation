@@ -28,7 +28,6 @@ public class RepresentativeController {
         sql = "Select vistoreteam ,localteam  from Users where game_id="+"'"+game_id+"'";
         ArrayList<ArrayList<String>> existGame = myDB.SelectAzureSQL(sql);
 
-        //todo need to check it with the database
         if( existGame.isEmpty()){
             System.out.println("Game not exist");
             return false;
