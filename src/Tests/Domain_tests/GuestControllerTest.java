@@ -1,9 +1,16 @@
-package Domain;
+package Domain_tests;
 
-import org.junit.jupiter.api.DisplayName;
+import Domain.GuestController;
 import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
+//import static org.junit.jupiter.api.*;
+//import org.junit.jupiter.api.DisplayName;
+//import org.junit.jupiter.api.*;
+//import static org.junit.jupiter.api.Assertions.assertFalse;
+
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
 public class GuestControllerTest {
     private GuestController guestController;

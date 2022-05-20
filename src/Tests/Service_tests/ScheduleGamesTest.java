@@ -1,10 +1,11 @@
-package Service;
+package Service_tests;
 
 import Domain.EventLog;
 import Domain.Game;
 import Domain.League;
 import Domain.Team;
 
+import Service.ScheduleGames;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertFalse;

@@ -1,10 +1,12 @@
-package Service;
+package Service_tests;
 
+import Service.LoginProcedure;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
 public class LoginProcedureTest {
     private LoginProcedure loginProcedure;
