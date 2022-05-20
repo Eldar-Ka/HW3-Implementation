@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="21b957c1-370f-4945-97dc-a1b46876c5b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit5_api.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW3-Implementation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HW3-Implementation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Service/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Service/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Service/LoginProcedureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Service/LoginProcedureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Service/RefereeRegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Service/RefereeRegisterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/libraries/mssql_jdbc_10_2_0_jre8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/DataAccess/AzureDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/DataAccess/DBConnector.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/DataAccess/Dao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/DataAccess/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/DataAccess/mai.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Asset.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/AssociationRepresentative.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Coach.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Compliant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Event.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/EventLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/EventType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Fan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/FilterType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Guest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/League.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/MainReferee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Permission.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/PersonalPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Policy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/PredefinedMember.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Referee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Season.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/SystemManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/Team.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/TeamManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/TeamOwner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/Domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/HW3-Implementation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HW3-Implementation/ProjectPreparationWS.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="28sshD5fHASnuXO1S7cVnfytEpa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="15" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sqljdbc_10.2.0.0_enu/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre8.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RunManager" selected="JUnit.GuestControllerTest.shouldNotExist">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Service.Main" />
+      <module name="HW3-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mai" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DataAccess.mai" />
+      <module name="HW3-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DataAccess.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW3-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.GuestControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuestControllerTest.shouldExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW3-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.GuestControllerTest" />
+      <option name="METHOD_NAME" value="shouldExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuestControllerTest.shouldNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HW3-Implementation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Domain" />
+      <option name="MAIN_CLASS_NAME" value="Domain.GuestControllerTest" />
+      <option name="METHOD_NAME" value="shouldNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GuestControllerTest.shouldNotExist" />
+        <item itemvalue="JUnit.GuestControllerTest.shouldExist" />
+        <item itemvalue="JUnit.GuestControllerTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.mai" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21b957c1-370f-4945-97dc-a1b46876c5b2" name="Changes" comment="" />
+      <created>1652016759456</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652016759456</updated>
+      <workItem from="1652016767975" duration="6203000" />
+      <workItem from="1652023450039" duration="559000" />
+      <workItem from="1652196511540" duration="311000" />
+      <workItem from="1652196860742" duration="6717000" />
+      <workItem from="1652521961582" duration="7879000" />
+      <workItem from="1653050019549" duration="868000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Tests/Domain/GuestControllerTest.java</url>
+          <line>25</line>
+          <properties class="Domain_Tests.GuestControllerTest" method="shouldExist">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Tests/Domain/GuestControllerTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

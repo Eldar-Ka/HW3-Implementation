@@ -1,8 +1,5 @@
 package Domain;
 
-import DataAccess.AzureDB;
-import DataAccess.UserDB;
-
 public class Guest extends User{
 
     public Guest() {
