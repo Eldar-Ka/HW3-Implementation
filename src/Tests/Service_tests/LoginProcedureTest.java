@@ -3,8 +3,8 @@ package Service_tests;
 import Service.LoginProcedure;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
@@ -28,7 +28,7 @@ public class LoginProcedureTest {
     @DisplayName("this test should login an existing member")
     public void shouldExist() {
         boolean flag=this.loginProcedure.RequestLogin("david", "654321");
-        assertFalse(flag);
+        assertTrue(flag);
     }
     @Test
     @DisplayName("this test should not login an existing member because of a wrong password")

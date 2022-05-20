@@ -7,16 +7,17 @@ import Domain.Team;
 
 import Service.ScheduleGames;
 import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.*;
+
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class ScheduleGamesTest {
 
-    private ScheduleGames scheduleGames;
-    private League league;
-    private EventLog eventLong;
+    ScheduleGames schedules;
+    League league;
+    EventLog eventLong;
 
     @BeforeEach
     public void setupAll(){
@@ -24,28 +25,65 @@ public class ScheduleGamesTest {
     }
 
     @BeforeEach
+
     public void setup(){
         System.out.println("Instantiating League,EventLog");
-        League league=new League();
-        EventLog eventLong=new EventLog();
+        league=new League();
+        eventLong=new EventLog();
+        schedules = new ScheduleGames();
     }
+    /*
+    Test 2 - Scheduling games - we need to check if game does not exist in the DB, if it does, return false,
+    if it doesn't - return true -> which means the game has been scheduled.
+    Test 1 - Scheduling games, game already exists = fail.
+     */
 
     @Test
-    @DisplayName("this test should not schedule a Games because its not found it the DB")
-    public void scheduleGamesNotFound() {
-        Team teamH=new Team("team1",true,null,null,league);
-        Team teamG=new Team("team2",true,null,null,league);
-        Game game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
-        boolean flag=this.scheduleGames.schedule_games(game,"2022-04-12 18:30:00.000");
+    @DisplayName("this test should not schedule a Games because it already has a date")
+    public void  scheduleGameError(){
+        Team teamH = new Team("team1",true,null,null,league);
+        Team teamG = new Team("team2",true,null,null,league);
+        Game game = new Game(teamH,teamG,"barooh","1-1",eventLong,league);
+        boolean flag = schedules.schedule_games(game,"2022-04-12 18:30:00.000");
         assertFalse(flag);
     }
+
+
     @Test
-    @DisplayName("this test should schedule a Games")
-    public void scheduleGames() {
-        Team teamH=new Team("hapoel",true,null,null,league);
-        Team teamG=new Team("makabi",true,null,null,league);
+    @DisplayName("this test should not schedule a Games because it not exist")
+    public void  scheduleGameErrorBecauseNotExist(){
+        Team teamH = new Team("team3",true,null,null,league);
+        Team teamG = new Team("team4",true,null,null,league);
+        Game game = new Game(teamH,teamG,"barooh","1-1",eventLong,league);
+        boolean flag = schedules.schedule_games(game,"2022-04-12 18:30:00.002");
+        assertFalse(flag);
+    }
+
+
+    //===================================================================================
+
+    //TODO !! need to delete from db before the exam this is hadpami after you update the db its will fall alawys ! ths
+    @Test
+    @DisplayName("this test should schedule a Games if the game dont have date, else will fail")
+    public void scheduleGamesWithoutDate() {
+        Team teamH=new Team("Macabi TA",true,null,null,league);
+        Team teamG=new Team("Hapoel H",true,null,null,league);
         Game game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
-        boolean flag=this.scheduleGames.schedule_games(game,"2022-01-01 00:00:00.000");
+        boolean flag=this.schedules.schedule_games(game,"2022-01-01 00:00:00.000");
         assertTrue(flag);
     }
+
+
+    @Test
+    @DisplayName("this test should return error since game already has a date")
+    public void scheduleGamesAlreadyHasDate() {
+        Team teamH=new Team("Macabi TA",true,null,null,league);
+        Team teamG=new Team("Hapoel H",true,null,null,league);
+        Game game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
+        boolean flag=this.schedules.schedule_games(game,"2022-01-01 00:00:00.001");
+        assertFalse(flag);
+    }
+    //===================================================================================
+
+
 }
