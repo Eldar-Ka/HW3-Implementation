@@ -1,5 +1,6 @@
 package Service_tests;
 
+import DataAccess.AzureDB;
 import Domain.EventLog;
 import Domain.Game;
 import Domain.League;
@@ -24,8 +25,9 @@ public class ScheduleGamesTest {
         System.out.println("Testing For Schedule Games: ");
     }
 
-    @BeforeEach
 
+
+    @BeforeEach
     public void setup(){
         System.out.println("Instantiating League,EventLog");
         league=new League();
@@ -62,7 +64,6 @@ public class ScheduleGamesTest {
 
     //===================================================================================
 
-    //TODO !! need to delete from db before the exam this is hadpami after you update the db its will fall alawys ! ths
     @Test
     @DisplayName("this test should schedule a Games if the game dont have date, else will fail")
     public void scheduleGamesWithoutDate() {
@@ -85,5 +86,13 @@ public class ScheduleGamesTest {
     }
     //===================================================================================
 
+    // beacuse the test scheduleGamesWithoutDate its schedule date, we need to delet it after the test
+    @AfterAll
+    public void deletFromDb() {
+        System.out.println("here ");
+        AzureDB db = new AzureDB();
+        String  sql = "UPDATE  Games SET date = NULL Where localteam= 'Macabi TA' and vistoreteam= 'Hapoel H'";
+        db.ExecuteAzureSQL(sql);
+    }
 
 }

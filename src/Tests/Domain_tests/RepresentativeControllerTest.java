@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RepresentativeControllerTest {
 
-    private RepresentativeController representativeController;
+//    private RepresentativeController representativeController;
     private League league;
     private EventLog eventLong;
     private RepresentativeControllerStub RCStub;
@@ -18,20 +18,25 @@ public class RepresentativeControllerTest {
     public void setup(){
         league=new League();
         eventLong=new EventLog();
-        this.representativeController = new RepresentativeController();
+//        this.representativeController = new RepresentativeController();
         RCStub=new RepresentativeControllerStub();
     }
 
     @Test
-    @DisplayName("this test should is for schedule of Games")
-    public void scheduleGames() {
+    @DisplayName("Scheduling a game which does not exist")
+    public void scheduleGameDoesNotExist() {
         Team teamH=new Team("team1",true,null,null,league);
         Team teamG=new Team("team2",true,null,null,league);
         Game game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
         assertFalse(RCStub.stubSchedule_games(game,"2022-01-01 00:00:00.000"));
-        teamH=new Team("hapoel",true,null,null,league);
-        teamG=new Team("makabi",true,null,null,league);
-        game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
+    }
+
+    @Test
+    @DisplayName("Scheduling an existing game")
+    public void scheduleGameExists(){
+        Team teamH=new Team("hapoel",true,null,null,league);
+        Team teamG=new Team("makabi",true,null,null,league);
+        Game game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
         assertTrue(RCStub.stubSchedule_games(game,"2022-01-01 00:00:00.000"));
     }
 //    @Test
