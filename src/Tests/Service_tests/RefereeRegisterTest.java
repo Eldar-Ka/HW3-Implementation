@@ -36,14 +36,22 @@ public class RefereeRegisterTest {
         boolean flag = this.refereeRegister.RegisterReferee("bob_kelso", "bobkelso@sacredheart.com", "3");
         assertTrue(flag);
     }
-
+    @Test
+    @DisplayName("In this test we will try registering a referee with emil which does match the userName " +
+            " to a game - expected false.")
+    public void emailNotExist() {
+        boolean flag = this.refereeRegister.RegisterReferee("bob_kelso", "mama", "123");
+        assertFalse(flag);
+    }
     @Test
     @DisplayName("In this test we will try to register a referee to a game" +
             "which does not exists - expected false.")
     public void gameNotExist() {
-        boolean flag = this.refereeRegister.RegisterReferee("Jo", "mama", "123");
+        boolean flag = this.refereeRegister.RegisterReferee("bob_kelso", "bobkelso@sacredheart.com", "123");
         assertFalse(flag);
     }
+
+
 
 
 }

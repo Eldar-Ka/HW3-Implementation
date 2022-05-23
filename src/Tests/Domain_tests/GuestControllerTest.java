@@ -41,4 +41,10 @@ public class GuestControllerTest {
         boolean flag=this.guestControllerStub.RequestLogin("david", "123");
         assertFalse(flag);
     }
+    @Test
+    @DisplayName("this test should not login because the user does not exist")
+    public void userNotExist() {
+        boolean flag=this.guestControllerStub.RequestLogin("Jo", "654321");
+        assertFalse(flag);
+    }
 }
