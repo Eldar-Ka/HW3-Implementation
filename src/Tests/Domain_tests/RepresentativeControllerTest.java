@@ -18,7 +18,6 @@ public class RepresentativeControllerTest {
     public void setup(){
         league=new League();
         eventLong=new EventLog();
-//        this.representativeController = new RepresentativeController();
         RCStub=new RepresentativeControllerStub();
     }
 

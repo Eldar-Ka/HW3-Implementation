@@ -14,8 +14,11 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 public class GuestControllerStub extends GuestController {
 
     public boolean RequestLogin(String username, String password) {
-        return "david".equals(username) && "654321".equals(password);
-
+        String currentUser = "david";
+        String currentPassword = "654321";
+        if(currentUser==username && currentPassword==password)
+            return true;
+        return false;
     }
 
 
