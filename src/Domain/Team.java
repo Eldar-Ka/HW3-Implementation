@@ -3,7 +3,7 @@ package Domain;
 import java.util.ArrayList;
 
 public class Team {
-    String Name;
+    public String Name;
     private boolean active=true;
     private PersonalPage personalPage;
     private TeamManager teamManager;
