@@ -14,14 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
 public class GuestControllerTest {
-    private GuestControllerStub guestControllerStub;
+    private GuestControllerStub guestControllerStub = new GuestControllerStub();
 
 
-    @BeforeAll
-    public void setup() {
-        System.out.println("Instantiating Login Procedure");
-        this.guestControllerStub =new GuestControllerStub();
-    }
+
 
     @Test
     @DisplayName("this test should not login because the user does not exist")

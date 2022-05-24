@@ -14,12 +14,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class RefereeRegisterTest {
 
-    private RefereeRegister refereeRegister;
+    private RefereeRegister refereeRegister = new RefereeRegister();
 
     @BeforeAll
     public void setup() {
         System.out.println("Instantiating Referee Register");
-        this.refereeRegister = new RefereeRegister();
+//        this.refereeRegister = new RefereeRegister();
     }
 
     @Test

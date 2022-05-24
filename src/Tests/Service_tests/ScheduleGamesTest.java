@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class ScheduleGamesTest {
 
-    ScheduleGames schedules;
+    ScheduleGames schedules = new ScheduleGames();;
     League league;
     EventLog eventLong;
 
@@ -86,9 +86,9 @@ public class ScheduleGamesTest {
     }
     //===================================================================================
 
-    // beacuse the test scheduleGamesWithoutDate its schedule date, we need to delet it after the test
+    // because the test scheduleGamesWithoutDate its schedule date, we need to delet it after the test
     @AfterAll
-    public void deletFromDb() {
+    public void deleteFromDb() {
         System.out.println("here ");
         AzureDB db = new AzureDB();
         String  sql = "UPDATE  Games SET date = NULL Where localteam= 'Macabi TA' and vistoreteam= 'Hapoel H'";

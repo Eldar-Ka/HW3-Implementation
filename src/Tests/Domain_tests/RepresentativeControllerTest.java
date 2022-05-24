@@ -12,7 +12,7 @@ public class RepresentativeControllerTest {
 //    private RepresentativeController representativeController;
     private League league;
     private EventLog eventLong;
-    private RepresentativeControllerStub RCStub;
+    private RepresentativeControllerStub RCStub = new RepresentativeControllerStub();
 
     @BeforeAll
     public void setup(){
