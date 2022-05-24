@@ -9,14 +9,14 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 
 public class LoginProcedureTest {
-    private LoginProcedure loginProcedure;
+    private LoginProcedure loginProcedure=new LoginProcedure();
 
-
-    @BeforeEach
-    public void setup() {
-        System.out.println("Instantiating Login Procedure");
-        this.loginProcedure=new LoginProcedure();
-    }
+//
+//    @BeforeEach
+//    public void setup() {
+//        System.out.println("Instantiating Login Procedure");
+//        this.loginProcedure=new LoginProcedure();
+//    }
 
     @Test
     @DisplayName("this test should not login because the user does not exist")
