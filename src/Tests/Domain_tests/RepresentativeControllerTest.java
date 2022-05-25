@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RepresentativeControllerTest {
 
-//    private RepresentativeController representativeController;
     private League league;
     private EventLog eventLong;
     private RepresentativeControllerStub RCStub = new RepresentativeControllerStub();
@@ -23,6 +22,9 @@ public class RepresentativeControllerTest {
     @Test
     @DisplayName("this test is for Registration of Referees")
     public void RegisterReferee() {
+        /*
+        This test is for registering referees test's. Both for referee exists and does not exist.
+         */
         assertFalse(RCStub.stubRegisterReferee("Jo", "mama", "123"));
         assertFalse(RCStub.stubRegisterReferee("Jo", "mama", "1"));
         assertFalse(RCStub.stubRegisterReferee("Jo", "perrycox@sacredheart.com", "1"));
@@ -35,8 +37,12 @@ public class RepresentativeControllerTest {
 
 
     @Test
-    @DisplayName("this test is for Schedule Game")
+    @DisplayName("This test is for Schedule Game")
     public void ScheduleGame() {
+        /*
+        This test is for scheduling games for existing and non-existing games, wrong teams and
+        right teams.
+         */
         Team currectTeamH=new Team("hapoel",true,null,null,league);
         Team wrongTeamH=new Team("wrong",true,null,null,league);
         Team currectTeamG=new Team("makabi",true,null,null,league);

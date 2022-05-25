@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class RepresentativeController_Integration {
     private League league;
     private EventLog eventLong;
-//    private RepresentativeControllerStub RCStub;
     private RepresentativeControllerTest repCtest;
     private ScheduleGamesTest realScheduleTest;
     private RefereeRegisterTest realRefereeRegister;
@@ -65,7 +64,6 @@ class RepresentativeController_Integration {
         realScheduleTest.scheduleGameErrorBecauseNotExist();
         realScheduleTest.scheduleGamesWithoutDate();
         realScheduleTest.scheduleGamesAlreadyHasDate();
-        //realScheduleTest.deleteFromDb();//?
     }
 
     /*

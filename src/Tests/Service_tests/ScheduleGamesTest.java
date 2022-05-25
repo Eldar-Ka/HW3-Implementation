@@ -86,7 +86,10 @@ public class ScheduleGamesTest {
     }
     //===================================================================================
 
-    // because the test scheduleGamesWithoutDate its schedule date, we need to delet it after the test
+    /*
+     Since the test scheduleGamesWithoutDate schedules a date,
+     we need to delete it after the test
+     */
     @AfterAll
     public void deleteFromDb() {
         System.out.println("here ");

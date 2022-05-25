@@ -2,7 +2,6 @@ package Integration_tests;
 
 import Domain_tests.*;
 import Service_tests.*;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -12,12 +11,6 @@ public class GuestController_Integration {
     private GuestControllerTest guestControllerTest = new GuestControllerTest();
     private LoginProcedureTest realLoginTest = new LoginProcedureTest();
 
-//    @BeforeAll
-//    public void setup() {
-//        System.out.println("Initiating Guest Controller Integration Tests");
-//        guestControllerTest = new GuestControllerTest();
-//    }
-
     @Test
     @DisplayName("First part of integration testing - going through first stub")
     public void stubRequestLogin() {
@@ -25,9 +18,8 @@ public class GuestController_Integration {
         First stage of integration testing - going through the first stub.
         using the first unit test.
          */
-        guestControllerTest.shouldExist();
-        guestControllerTest.shouldNotExist();
-        guestControllerTest.userNotExist();
+        guestControllerTest.userExists();
+        guestControllerTest.userDoesNotExist();
         guestControllerTest.wrongPass();
     }
 

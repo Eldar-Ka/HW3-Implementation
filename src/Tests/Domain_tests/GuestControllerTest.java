@@ -20,14 +20,8 @@ public class GuestControllerTest {
 
 
     @Test
-    @DisplayName("this test should not login because the user does not exist")
-    public void shouldNotExist() {
-        boolean flag=this.guestControllerStub.RequestLogin("Jo", "mama");
-        assertFalse(flag);
-    }
-    @Test
     @DisplayName("this test should login an existing member")
-    public void shouldExist() {
+    public void userExists() {
         boolean flag=this.guestControllerStub.RequestLogin("david", "654321");
         assertTrue(flag);
     }
@@ -39,7 +33,7 @@ public class GuestControllerTest {
     }
     @Test
     @DisplayName("this test should not login because the user does not exist")
-    public void userNotExist() {
+    public void userDoesNotExist() {
         boolean flag=this.guestControllerStub.RequestLogin("Jo", "654321");
         assertFalse(flag);
     }

@@ -19,7 +19,6 @@ public class RefereeRegisterTest {
     @BeforeAll
     public void setup() {
         System.out.println("Instantiating Referee Register");
-//        this.refereeRegister = new RefereeRegister();
     }
 
     @Test
