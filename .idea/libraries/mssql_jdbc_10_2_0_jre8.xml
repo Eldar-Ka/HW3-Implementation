@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="mssql-jdbc-10.2.0.jre8">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../מחשב קודם/לימודים/בן גוריון/הנדסת מערכות מידע/סמסטר ו/סדנת הכנה לפרוייקט/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre8.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/1/sqljdbc_10.2/enu/mssql-jdbc-10.2.0.jre8.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

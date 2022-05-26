@@ -83,6 +83,7 @@ public class ScheduleGamesTest {
         Game game=new Game(teamH,teamG,"barooh","1-1",eventLong,league);
         boolean flag=this.schedules.schedule_games(game,"2022-01-01 00:00:00.001");
         assertFalse(flag);
+        deleteFromDb();
     }
     //===================================================================================
 
